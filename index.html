@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=""en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Group 38 Meeting Minutes</title>
@@ -46,9 +46,9 @@
             <details>
                 <summary><b>Missed</b> the Meeting?<br>(Todd, I'm talking to you)</summary>
                 <p>Video Recording</p>
-                <video controls src="Assets/Video/10-3_meeting.mp4" type="video/mp4"></video>
+                <video controls src="Assets/Video/10-3_meeting.mp4"></video>
                 <p>Audio Recording</p>
-                <audio controls src="Assets/Audio/10-3_meeting.m4a">
+                <audio controls src="Assets/Audio/10-3_meeting.m4a"></audio>
             </details>
             <hr>
         </header>
@@ -76,7 +76,7 @@
                                 <li><b>note from Damian</b>: <q>likely will need unibody metal contruction</q></li>
                             </ul>
                         </li>
-                        <li>Size: approximately 45cm wide × 35cm long and &lt5cm thick</li>
+                        <li>Size: approximately 45cm wide × 35cm long and &lt;5cm thick</li>
                         <li>Design: unique look
                             <ul>
                                 <li><em>stands out</em> as a scale</li>
@@ -124,23 +124,23 @@
 
                 <div>
                     <h3>Hardware</h3>
-                    <span>
+                    <div>
                         <p><q>Motion detecting <a href="https://en.wikipedia.org/wiki/Passive_infrared_sensor">PIR</a> (Passive IR) is affordable, low energy, and allows for ambient usefulness.</q> — Regina</p>
                         <p><q>E-Ink display uses less energy, and can display ambient information without drawing current.</q> — Karen</p>
                         <p><q>Touch-sensitive surface allows for simple interactions using feet and capacitive detection for <i>waking-up</i> the scale.</q> — Janis</p>
                         <p><q>Top surface covered in glass for scratch resistance and easy cleaning.</q> — Damian</p>
                         <p><q>Simple buzzer for fun, congratulatory sounds.</q> — Regina</p>
-                    </span>
+                    </div>
                 </div>
                 <div>
                     <h3>Software Features</h3>
-                    <span>
+                    <div>
                         <p><q>Phone app contains balance games to play while on the scale, connected through bluetooth.</q> — Damian</p>
                         <p><q>Scale displays weather/previous weight/other user selected data when directly being used.</q> — Regina</p>
                         <p><q>Use balance to make selections on the device such as profile, goal weight, etc.</q> — Gretchen</p>
                         <p><q>Scale gives positive affirmations or quotes while weighing.</q> — Karen</p>
                         <p><q>New on-scale balance games are unlocked by doing more weigh-ins.</q> — Regina</p>
-                    </span>
+                    </div>
                 </div>
             </section>
             <hr>
@@ -176,21 +176,23 @@
                     </fieldset>
                     <fieldset>
                         <legend>Do you have any ideas for the scale?</legend>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" size="12">
-                        <label for="date">Today's date:</label>
-                        <input type="date" id="date" name="date" value="2022-10-03" min="2022-10-03">
-                        <label for="affiliation_select">Affiliation:</label>
-                        <select name="affiliation" id="affiliation_select">
-                            <option value="">Choose an option</option>
-                            <option value="ucsd">UCSD</option>
-                            <option value="csusm">CSUSM</option>
-                            <option value="other">other</option>
-
-                        </select>
+                        <span>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" size="12">
+                            <label for="date">Today's date:</label>
+                            <input type="date" id="date" name="date" value="2022-10-03" min="2022-10-03">
+                            <label for="affiliation_select">Affiliation:</label>
+                            <select name="affiliation" id="affiliation_select">
+                                <option value="">Choose an option</option>
+                                <option value="ucsd">UCSD</option>
+                                <option value="csusm">CSUSM</option>
+                                <option value="other">other</option>
+                            </select>
+                        </span>
+                        
                         <p></p>
 
-                        <label for="category">Type of idea:</label>
+                        <label for="category_choice">Type of idea:</label>
                         <input list="category" id="category_choice" name="category_choice">
                         <datalist id="category">
                             <option value="Hardware">
