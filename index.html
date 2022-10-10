@@ -10,27 +10,201 @@
         
         <nav>
             <a href="https://jpaoad31.github.io">John's Page</a>
+            <hr>
         </nav>
 
         <header>
-            <h1>Meeting Minutes</h1>
-            <p>meeting notes made easy(-ish)</p>
+            <h1>Heath Tracking: Weight</h1>
+            <h2>Monday October 3</h2>
 
-            <p>
-                Hello there, from the header
-            </p>
+            <details>
+                <summary>Agenda</summary>
+
+                <p><b>From Last Meeting</b></p>
+                <p>
+                    Review Updated <b>Goals</b> and <b>Constraints</b>.<br>
+                    Vote on hardware designs presented from last meeting.
+                </p>
+
+                <p><b>To Address Today</b></p>
+                <p>
+                    Contribute ideas for possible hardware/software features.<br>
+                </p>
+                
+            </details>
+            <details>
+                <summary>Attendees</summary>
+                <ul>
+                    <li>Regina George</li>
+                    <li>Janis Ian</li>
+                    <li>Damian Leigh</li>
+                    <li>Gretchen W.</li>
+                    <li>Karen Smith</li>
+                    <li>Ms. Norbury</li>
+                </ul>
+            </details>
+            <details>
+                <summary><b>Missed</b> the Meeting?<br>(Todd, I'm talking to you)</summary>
+                <p>Video Recording</p>
+                <video controls src="Assets/Video/10-3_meeting.mp4" type="video/mp4"></video>
+                <p>Audio Recording</p>
+                <audio controls src="Assets/Audio/10-3_meeting.m4a">
+            </details>
+            <hr>
         </header>
 
         <main>
-            <p>
-                here's body-ody-ody. (or, well, main)
-            </p>
+            <section>
+                <h2>Goals</h2>
+                <ul>
+                    <li>Smart heath can be afforable and accessible.</li>
+                    <li>Weight tracking should be easy and <i>rewarding</i>.</li>
+                    <li>User information is under user control.</li>
+                </ul>
+
+                <q>Health is for everyone</q><br>— Founder/CEO Cady Heron
+            </section>
+            <section>
+                <h2>Design Constraints</h2>
+                <div>
+                    <h3>Requirements from HQ</h3>
+                    <ol>
+                        <li><strong>Cost</strong>: under $100 MSRP</li>
+                        <li>
+                            Strength: supports up to 300lbs (140kg)<br>
+                            <ul>
+                                <li><b>note from Damian</b>: <q>likely will need unibody metal contruction</q></li>
+                            </ul>
+                        </li>
+                        <li>Size: approximately 45cm wide × 35cm long and &lt5cm thick</li>
+                        <li>Design: unique look
+                            <ul>
+                                <li><em>stands out</em> as a scale</li>
+                                <li>fits into living spaces</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3>Targets</h3>
+                    <ul>
+                        <li>Battery: One year of <b>daily</b> measurements</li>
+                        <li>Ambiently useful</li>
+                    </ul>
+                </div>
+                
+            </section>
+
+            <section>
+                <h2>Vote on Design Direction</h2>
+                <details>
+                    <summary>Designs</summary>
+                    <p><i>Geometric</i> design, <i>Rounded</i> design, and <i>Hyperbolic</i> design</p>
+                    <img src="Assets/Images/Scale_1.jpg"
+                        alt="Geometric scale in the shape of a stretched octagon, with a verticle line across the center.">
+                    <img src="Assets/Images/Scale_2.jpg" 
+                        alt="Rectangular scale with rounded corners with two verticle rounded-rectangular sections sections for foot placement.">
+                    <img src="Assets/Images/Scale_3.jpg" 
+                        alt="Hyperbolic rectangular scale with corners less than 90 degrees and edges that bow inward. Two sets of caret symbols (one on top and an inverted caret on the bottom) denote foot placement.">
+                </details>
+                <div>
+                    <h3>Results</h3>
+                    <ol>
+                        <li><strong>Hyperbolic</strong> (3 votes)</li>
+                        <li>Geometric (2 votes)</li>
+                        <li>Rounded (1 vote)</li>
+                    </ol>
+                </div>
+            </section>
+
+            <hr>
+            <section>
+                <h2>Brainstorming</h2>
+
+                <div>
+                    <h3>Hardware</h3>
+                    <span>
+                        <p><q>Motion detecting <a href="https://en.wikipedia.org/wiki/Passive_infrared_sensor">PIR</a> (Passive IR) is affordable, low energy, and allows for ambient usefulness.</q> — Regina</p>
+                        <p><q>E-Ink display uses less energy, and can display ambient information without drawing current.</q> — Karen</p>
+                        <p><q>Touch-sensitive surface allows for simple interactions using feet and capacitive detection for <i>waking-up</i> the scale.</q> — Janis</p>
+                        <p><q>Top surface covered in glass for scratch resistance and easy cleaning.</q> — Damian</p>
+                        <p><q>Simple buzzer for fun, congratulatory sounds.</q> — Regina</p>
+                    </span>
+                </div>
+                <div>
+                    <h3>Software Features</h3>
+                    <span>
+                        <p><q>Phone app contains balance games to play while on the scale, connected through bluetooth.</q> — Damian</p>
+                        <p><q>Scale displays weather/previous weight/other user selected data when directly being used.</q> — Regina</p>
+                        <p><q>Use balance to make selections on the device such as profile, goal weight, etc.</q> — Gretchen</p>
+                        <p><q>Scale gives positive affirmations or quotes while weighing.</q> — Karen</p>
+                        <p><q>New on-scale balance games are unlocked by doing more weigh-ins.</q> — Regina</p>
+                    </span>
+                </div>
+            </section>
+            <hr>
         </main>
 
         <footer>
-            <p>
-                This is a footer.
-            </p>
+            <details>
+                <summary>Have Feeback For Our Team?</summary>
+                <p> Leave any thoughts you had about these notes or the team in general.</p>
+                <form>
+                    <fieldset>
+                        <legend>Choose your favorite attendee</legend>
+                        <input type="radio" id="Damian" name="attendee" value="Damian">
+                        <label for="Damian">Damian</label>
+                        <input type="radio" id="Regina" name="attendee" value="Regina">
+                        <label for="Regina">Regina</label>
+                        <input type="radio" id="Janis" name="attendee" value="Janis">
+                        <label for="Janis">Janis</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Indicate which ideas you would actually enjoy having in a scale</legend>
+                        <input type="checkbox" id="PIR" name="PIR">
+                        <label for="PIR">Motion detection via PIR for ambient information.</label>
+                        <p></p>
+                        <input type="checkbox" id="Touch" name="Touch">
+                        <label for="Touch">Touch-sensitive surface for controls using feet.</label>
+                        <p></p>
+                        <input type="checkbox" id="Affirmations" name="PIR">
+                        <label for="Affirmations">Providing positive affirmations while taking measurements.</label>
+                        <p></p>
+                        <input type="checkbox" id="Games" name="Games">
+                        <label for="Games">Playing balance games using a phone or tablet with the scale.</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Do you have any ideas for the scale?</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" size="12">
+                        <label for="date">Today's date:</label>
+                        <input type="date" id="date" name="date" value="2022-10-03" min="2022-10-03">
+                        <label for="affiliation_select">Affiliation:</label>
+                        <select name="affiliation" id="affiliation_select">
+                            <option value="">Choose an option</option>
+                            <option value="ucsd">UCSD</option>
+                            <option value="csusm">CSUSM</option>
+                            <option value="other">other</option>
+
+                        </select>
+                        <p></p>
+
+                        <label for="category">Type of idea:</label>
+                        <input list="category" id="category_choice" name="category_choice">
+                        <datalist id="category">
+                            <option value="Hardware">
+                            <option value="Software">
+                        </datalist>
+                        <p></p>
+                        <textarea id="idea" name="idea" rows="3" cols="50">I think that...</textarea>
+                        <p></p>
+                        <button type="button">Do Nothing</button>
+                    </fieldset>
+
+                </form>
+            </details>
+            <br><br><br><br><br><br><br><br><br><br>
         </footer>
     </body>
 </html>
