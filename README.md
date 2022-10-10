@@ -1,9 +1,5 @@
 # Lab 2 - HTML and (Browser) Development Tools 
 
-I'll try to fill this in as I go along, hopefully my docs-skills aren't as bad as I expect them to be.
+Link to Lab 2:
 
-## Page Structure
-
-### Header
-
-### Footer
+[https://jpaoad31.github.io/CSE110-Lab2/](https://jpaoad31.github.io/CSE110-Lab2/)
