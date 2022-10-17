@@ -1,14 +1,10 @@
 ---
 name: CSS Add
 about: Implement this idea from the lab write-up
-title: CSS ADD [thing]
+title: CSS ADD: 
 labels: ''
 assignees: ''
 
 ---
-
-**What is it**
-
+**Type of thing:** 
 **What does it look like**
-
-**Where should it go**
