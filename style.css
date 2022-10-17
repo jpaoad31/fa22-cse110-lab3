@@ -1,0 +1,20 @@
+h1 {
+    /*hopefully I can find a better font for this*/
+    text-align: center;
+    color: rgb(160, 160, 160);
+}
+
+h2 {
+    text-align: right;
+    color: hsl(240, 93%, 62%);
+}
+
+h3 {
+    text-align: start;
+    color:#9044f8
+}
+
+p {
+    color: orange;
+    background-color: black;
+}
