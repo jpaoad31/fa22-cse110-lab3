@@ -2,6 +2,10 @@ h1 {
     /*hopefully I can find a better font for this*/
     text-align: center;
     color: rgb(160, 160, 160);
+    background-color: azure;
+    min-width: 5in;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 h2 {
@@ -11,10 +15,67 @@ h2 {
 
 h3 {
     text-align: start;
-    color:#9044f8
+    color:#9044f8;
+    height: 20pt;
+    width: 100px;
 }
 
 p {
     color: orange;
     background-color: black;
+    max-width: 200px;
+    max-height: 3in;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+:hover {
+    color:rgb(24, 70, 206);
+}
+
+:active {
+    color: red;
+}
+
+video {
+    max-width: 200px;
+}
+
+* {
+    text-decoration: underline;
+}
+
+#software {
+    display: flex;
+}
+
+#hardware {
+    display: grid;
+}
+
+details.images {
+    background-color: blue;
+}
+
+span {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.fart {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 50px;
+    justify-items: end;
+}
+
+@media (min-width: 200px) {
+    body {
+        padding: 200px;
+    }
 }

@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <title>Group 38 Meeting Minutes</title>
         <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="style.css"
+        <link rel="stylesheet" href="style.css">
+        <link   href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+                rel="stylesheet"/>
     </head>
-
     <body>
         
         <nav>
@@ -33,7 +34,7 @@
                 </p>
                 
             </details>
-            <details>
+            <details style="margin: 10% 10vw 10vh 40px;">
                 <summary>Attendees</summary>
                 <ul>
                     <li>Regina George</li>
@@ -43,11 +44,11 @@
                     <li>Karen Smith</li>
                     <li>Ms. Norbury</li>
                 </ul>
-            </details>
+            </details style="margin: auto">
             <details>
                 <summary><b>Missed</b> the Meeting?<br>(Todd, I'm talking to you)</summary>
                 <p>Video Recording</p>
-                <video controls src="Assets/Video/10-3_meeting.mp4"></video>
+                <video controls src="Assets/Video/10-3_meeting.mp4" style="padding: 10px 40px 10px 40px"></video>
                 <p>Audio Recording</p>
                 <audio controls src="Assets/Audio/10-3_meeting.m4a"></audio>
             </details>
@@ -68,7 +69,7 @@
             <section>
                 <h2>Design Constraints</h2>
                 <div>
-                    <h3>Requirements from HQ</h3>
+                    <h3 style="display: inline-block;">Requirements from HQ</h3>
                     <ol>
                         <li><strong>Cost</strong>: under $100 MSRP</li>
                         <li>
@@ -90,8 +91,8 @@
                 <div>
                     <h3>Targets</h3>
                     <ul>
-                        <li>Battery: One year of <b>daily</b> measurements</li>
-                        <li>Ambiently useful</li>
+                        <li style="display: none;">Battery: One year of <b>daily</b> measurements</li>
+                        <li style="display: block; background-color: aqua;">Ambiently useful</li>
                     </ul>
                 </div>
                 
@@ -99,7 +100,7 @@
 
             <section>
                 <h2>Vote on Design Direction</h2>
-                <details>
+                <details class="images">
                     <summary>Designs</summary>
                     <p><i>Geometric</i> design, <i>Rounded</i> design, and <i>Hyperbolic</i> design</p>
                     <img src="Assets/Images/Scale_1.jpg"
@@ -111,7 +112,7 @@
                 </details>
                 <div>
                     <h3>Results</h3>
-                    <ol>
+                    <ol class="fart">
                         <li><strong>Hyperbolic</strong> (3 votes)</li>
                         <li>Geometric (2 votes)</li>
                         <li>Rounded (1 vote)</li>
@@ -119,13 +120,18 @@
                 </div>
             </section>
 
+            <span>
+                <image src="https://p7.hiclipart.com/preview/84/1007/646/super-mario-3d-world-super-mario-bros-super-mario-3d-land-mushroom.jpg"></image>
+                <image src="https://th.bing.com/th/id/OIP.voOE1wwMuLCvniXcbLzEKAHaHa?pid=ImgDet&rs=1"></image>
+            </span>
+
             <hr>
             <section>
                 <h2>Brainstorming</h2>
 
                 <div>
                     <h3>Hardware</h3>
-                    <div>
+                    <div id="hardware">
                         <p><q>Motion detecting <a href="https://en.wikipedia.org/wiki/Passive_infrared_sensor">PIR</a> (Passive IR) is affordable, low energy, and allows for ambient usefulness.</q> — Regina</p>
                         <p><q>E-Ink display uses less energy, and can display ambient information without drawing current.</q> — Karen</p>
                         <p><q>Touch-sensitive surface allows for simple interactions using feet and capacitive detection for <i>waking-up</i> the scale.</q> — Janis</p>
@@ -135,7 +141,7 @@
                 </div>
                 <div>
                     <h3>Software Features</h3>
-                    <div>
+                    <div  id="software" style="padding: 1cm; border-style: dotted; border-color: purple; border-width: 5px; border-radius: 200px">
                         <p><q>Phone app contains balance games to play while on the scale, connected through bluetooth.</q> — Damian</p>
                         <p><q>Scale displays weather/previous weight/other user selected data when directly being used.</q> — Regina</p>
                         <p><q>Use balance to make selections on the device such as profile, goal weight, etc.</q> — Gretchen</p>
@@ -145,10 +151,22 @@
                 </div>
             </section>
             <hr>
+            <span>
+                <p>hello this is a line of text that I need to inlcude to demonstate some specific css features. I suppose I can write about whatever I can set my mind to, but instead I would rather write about writing itself becuase that is how little creativity exists in my body.</p>
+            </span>
         </main>
 
         <footer>
-            <details>
+            <style>
+                footer {
+                    background-color: grey;
+                    padding-top: 1in;
+                    padding-bottom: 2in;
+                    padding-left: 2in;
+                    padding-right: 2in;
+                }
+            </style>
+            <div>
                 <summary>Have Feeback For Our Team?</summary>
                 <p> Leave any thoughts you had about these notes or the team in general.</p>
                 <form>
@@ -178,9 +196,9 @@
                     <fieldset>
                         <legend>Do you have any ideas for the scale?</legend>
                         <span>
-                            <label for="name">Name:</label>
+                            <label style="position: absolute" for="name">Name:</label>
                             <input type="text" id="name" size="12">
-                            <label for="date">Today's date:</label>
+                            <label style="position: relative" for="date">Today's date:</label>
                             <input type="date" id="date" name="date" value="2022-10-03" min="2022-10-03">
                             <label for="affiliation_select">Affiliation:</label>
                             <select name="affiliation" id="affiliation_select">
@@ -206,8 +224,7 @@
                     </fieldset>
 
                 </form>
-            </details>
-            <br><br><br><br><br><br><br><br><br><br>
+            </div>
         </footer>
     </body>
 </html>
