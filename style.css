@@ -44,6 +44,7 @@ video {
 }
 
 * {
+    /*I hate css*/
     text-decoration: underline;
 }
 
